@@ -34,8 +34,16 @@ body {
         visibility: collapse;
         align-items: center;
     }
-    header nav ul img{
+    header nav img{
         visibility: visible;
+        width: 375px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    header nav img{
+        visibility: collapse;
+        width: 0;
     }
 }
 
@@ -184,7 +192,3 @@ footer nav ul li a img:hover {
 }
 
 /*!Footer End*/
-
-#menu{
-    visibility: collapse;
-}

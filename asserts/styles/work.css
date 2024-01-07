@@ -29,6 +29,24 @@ body {
     background-color: white;
 }
 
+@media screen and (max-width:768px) {
+    header nav ul{
+        visibility: collapse;
+        align-items: center;
+    }
+    header nav img{
+        visibility: visible;
+        width: 375px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    header nav img{
+        visibility: collapse;
+        width: 0;
+    }
+}
+
 /*!Header*/
 
 header {
@@ -71,10 +89,13 @@ main{
     width: 682px;
     margin-left: 619px;
     margin-right: 619px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .head-section .t1{
-    width: 156px;
+    width: 682px;
     height: 69px;
     font-size: 44px;
     font-weight: 900;
